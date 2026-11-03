@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bom serialNumber="urn:uuid:d7b85919-1230-3878-ac0c-905c50bc297d" version="1" xmlns="http://cyclonedx.org/schema/bom/1.6">
+  <metadata>
+    <lifecycles>
+      <lifecycle>
+        <phase>build</phase>
+      </lifecycle>
+    </lifecycles>
+    <tools>
+      <components>
+        <component type="library">
+          <author>OWASP Foundation</author>
+          <group>org.cyclonedx</group>
+          <name>cyclonedx-maven-plugin</name>
+          <version>2.9.2</version>
+          <description>CycloneDX Maven plugin</description>
+          <hashes>
+            <hash alg="MD5">843a7130400f75d33f563dc7e9f52dea</hash>
+            <hash alg="SHA-1">2cac5a176b9f48801dfc4910d4f6a34bfbb13445</hash>
+            <hash alg="SHA-256">d9e5a12bac3c1a91d85f3a1ad84307099f457ff24aa65b438ba7de9ca784a54e</hash>
+            <hash alg="SHA-512">636f788518752c5a23d14bad41d68b0d549e4b3a3d720d66f2f6e2b8b956207942ee12abba968a1e9aac6cf1d78d9e738a4a75eeb8bc6fca2377030fbb482407</hash>
+            <hash alg="SHA-384">72aad41633b92fadd4dbd1c6f5c1b956836b22d3b96afbdd7ca8b8eb0456eec00c2ed658e3c2d4e93d95048bcc23dac8</hash>
+            <hash alg="SHA3-384">9837cee0f9b7d575f8d88df3ad6f58a075032ad2635e0987abbc102240327f1cec87dc062b3034009f028ab5baf988f9</hash>
+            <hash alg="SHA3-256">4c654267cde6eb6d295dbc06b33e33528412bee57549dae89c85b8df8202dbcb</hash>
+            <hash alg="SHA3-512">f7da73632ef2fd1c2d85f0cf5eebc2b6a3ff1ae2ed0945442e679da71490562a2ff6b67422dbd5285f4042eda6637e6f3544f62825a625b38efacfdebc8df137</hash>
+          </hashes>
+        </component>
+      </components>
+    </tools>
+    <component type="library" bom-ref="pkg:maven/org.apache.parquet/parquet-hadoop-bundle@1.18.1-deepbi1?type=jar">
+      <publisher>The Apache Software Foundation</publisher>
+      <group>org.apache.parquet</group>
+      <name>parquet-hadoop-bundle</name>
+      <version>1.18.1-deepbi1</version>
+      <description>Parquet is a columnar storage format that supports nested data. This provides the java implementation.</description>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.apache.parquet/parquet-hadoop-bundle@1.18.1-deepbi1?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://parquet.apache.org</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://repository.apache.org/service/local/staging/deploy/maven2</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://github.com/apache/parquet-java/issues</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>dev-subscribe@parquet.apache.org</url>
+        </reference>
+        <reference type="vcs">
+          <url>scm:git:git@github.com:apache/parquet-java.git/parquet-hadoop-bundle</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <properties>
+      <property name="maven.goal">makeBom</property>
+      <property name="maven.scopes">compile,provided,runtime,system</property>
+      <property name="cdx:reproducible">enabled</property>
+    </properties>
+  </metadata>
+  <components>
+    <component type="library" bom-ref="pkg:maven/org.apache.parquet/parquet-common@1.18.1?type=jar">
+      <publisher>The Apache Software Foundation</publisher>
+      <group>org.apache.parquet</group>
+      <name>parquet-common</name>
+      <version>1.18.1</version>
+      <description>Parquet is a columnar storage format that supports nested data. This provides the java implementation.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">2e887173a07b7061f859e339daf052dd</hash>
+        <hash alg="SHA-1">1eea5ca8cd78b3b5ea303104d23d949b1c682a8c</hash>
+        <hash alg="SHA-256">a8c710f2d0ddb4b1332e596cd91f74305b66ae1d7235c798a8b48ddbfb9d31d6</hash>
+        <hash alg="SHA-512">d85693eb65e4b7ace98e45e77c89dba04fe6d5b8095a987375e9e2262e0de794867d8f05691cbe6639ffb3645ae0ff2ecf30edfbc2379dc15669f43a09f10e38</hash>
+        <hash alg="SHA-384">4ff02d0da5bf2b35f4c23f805f985bc99c85e70cbef3218d2f8e2d8051bf8635b9f0bf615fe19c45240642e932ed529b</hash>
+        <hash alg="SHA3-384">331eebac76f3467821a9f7a0efb32a593b455f1b768a63f9e4bec8383b2736fc16521ca9e5fc1fbbfef8421028c77242</hash>
+        <hash alg="SHA3-256">635a1e40a23fc5a8385f507d01152c30f1e0b8da530c3971b62dff64434f526f</hash>
+        <hash alg="SHA3-512">250ffe40d260dea24c12c97b9a223b7e2add301b49042d718bbe7cfca4db5d8ec1d61384a91ac835ad00b6d9e15eddc08d22bf63348a14d14ce7a53aabf768ec</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.apache.parquet/parquet-common@1.18.1?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://parquet.apache.org</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://repository.apache.org/service/local/staging/deploy/maven2</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://github.com/apache/parquet-java/issues</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>dev-subscribe@parquet.apache.org</url>
+        </reference>
+        <reference type="vcs">
+          <url>scm:git:git@github.com:apache/parquet-java.git/parquet-common</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.apache.parquet/parquet-format-structures@1.18.1?type=jar">
+      <publisher>The Apache Software Foundation</publisher>
+      <group>org.apache.parquet</group>
+      <name>parquet-format-structures</name>
+      <version>1.18.1</version>
+      <description>Parquet-mr related java classes to use the parquet-format thrift structures.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">1c24323ab07d9807985f07db16016ddb</hash>
+        <hash alg="SHA-1">b517993cbce0398f0b62e8da40b5336ede3176c8</hash>
+        <hash alg="SHA-256">6613a8fd105c4f7f1578ff1f39476c30fdf485b0ac714c30444a9f70045892bb</hash>
+        <hash alg="SHA-512">2a9d92bc51a9214afa84bb5ea24f7abe0b7d34591a28715ae7e728968db4bba16ab1ce9e9673d403efe8fe6e2dfd75a381669a5a9dcd3a9641f89b00bebf4cc7</hash>
+        <hash alg="SHA-384">e40e60be1ffbab944ae3c571e8d40121212c3ebf4661dd1a45280f1795bd6cbc8b680bc543e058adf61f349ea472ecf5</hash>
+        <hash alg="SHA3-384">04da7d21de52776b827ce98fa7dfef43566921856186486cde80d0c857e3ec65cef9d8134b04dca38b5ae7d124fe30cb</hash>
+        <hash alg="SHA3-256">feb7026a8ac5e670e9c354c1d02937e7a2491f5fce765cad5494fb0cb116eaaf</hash>
+        <hash alg="SHA3-512">0b19d4d096d81581295980c36d6526f57d02b103f41d680984cf798c13449550298089d5f72c96c9f6b87f5810f39ec830f62b17725079c760ba42df9871a52d</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.apache.parquet/parquet-format-structures@1.18.1?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://parquet.apache.org/</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://repository.apache.org/service/local/staging/deploy/maven2</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://github.com/apache/parquet-java/issues</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>dev-subscribe@parquet.apache.org</url>
+        </reference>
+        <reference type="vcs">
+          <url>scm:git:git@github.com:apache/parquet-java.git/parquet-format-structures</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/javax.annotation/javax.annotation-api@1.3.2?type=jar">
+      <publisher>GlassFish Community</publisher>
+      <group>javax.annotation</group>
+      <name>javax.annotation-api</name>
+      <version>1.3.2</version>
+      <description>Common Annotations for the JavaTM Platform API</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">2ab1973eefffaa2aeec47d50b9e40b9d</hash>
+        <hash alg="SHA-1">934c04d3cfef185a8008e7bf34331b79730a9d43</hash>
+        <hash alg="SHA-256">e04ba5195bcd555dc95650f7cc614d151e4bcd52d29a10b8aa2197f3ab89ab9b</hash>
+        <hash alg="SHA-512">679cf44c3b9d635b43ed122a555d570292c3f0937c33871c40438a1a53e2058c80578694ec9466eac9e280e19bfb7a95b261594cc4c1161c85dc97df6235e553</hash>
+        <hash alg="SHA-384">fc0058495e54efb6e05a34e3ff422e7c8347bcc77d6d9b87e9253424968dee6ef6a215c318d7e54f8705276be81f0682</hash>
+        <hash alg="SHA3-384">ed6464b715de6ced0d9981a3f28140824946a4b7a02ffaff6116c833bb36e8f77a6282ce63c0d82cfe841d4fd6916891</hash>
+        <hash alg="SHA3-256">ecfc9bef24ae28cf94c6775ecf6e2086d90a25d8d5476a4f6bb24001601b6cd0</hash>
+        <hash alg="SHA3-512">f2b333527faedf504f60aa70a3d491972fa76f7e61e6351027f74613f41001157656824fe312b6e1df6dc4979704fe2a745b618d5368a97fe0bf8749739de9e2</hash>
+      </hashes>
+      <licenses>
+        <expression>(CDDL-1.0 OR GPL-2.0-with-classpath-exception)</expression>
+      </licenses>
+      <purl>pkg:maven/javax.annotation/javax.annotation-api@1.3.2?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://jcp.org/en/jsr/detail?id=250</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://maven.java.net/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://github.com/javaee/javax.annotation/issues</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>javaee-spec@javaee.groups.io</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/javaee/javax.annotation</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.slf4j/slf4j-api@1.7.33?type=jar">
+      <publisher>QOS.ch</publisher>
+      <group>org.slf4j</group>
+      <name>slf4j-api</name>
+      <version>1.7.33</version>
+      <description>The slf4j API</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">de8684fca5e9042d0120cb3306e8278f</hash>
+        <hash alg="SHA-1">d375aa1b98d34d5ddf73a3f19eaad66e98975b12</hash>
+        <hash alg="SHA-256">336811855ee97fcd8413343dc42f4d26362502860e8a9193e4db305e3e8ef80a</hash>
+        <hash alg="SHA-512">ccde4a938e90d683288f84375224ecd9b46aca20de7544c6300c82ef07780d25306239ea9c5565c3ff58038c9d5becc85c846df3c1809585ae33b20a32e6b8d9</hash>
+        <hash alg="SHA-384">dd31ce1f4fa4c7a892388422b4694d8a51bac05e4f2789eb7be734cdb2738f9f796eb951cfe989834ec78a65d5d762b5</hash>
+        <hash alg="SHA3-384">75d1aa5e386f2c71c598cda5b995ff5fd496e4003489d58d217be1951d24f5444c8de2fe7bf7a7ce9c40d6cfc0ee01b2</hash>
+        <hash alg="SHA3-256">ef2ec74302de597f6eec560b04a8de12a331302cbd5b9c178c237c3b683426a5</hash>
+        <hash alg="SHA3-512">4528a2981a1107261f6798c628075e9ac724060a72338e0ca8786b27162b17e358a96711b3d0cc673dff85d36fa9eb6eba907e15697b4c40a5236f140fb6a6f2</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/license/mit/</url>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.slf4j/slf4j-api@1.7.33?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://www.slf4j.org</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/qos-ch/slf4j/slf4j-api</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.apache.parquet/parquet-column@1.18.1?type=jar">
+      <publisher>The Apache Software Foundation</publisher>
+      <group>org.apache.parquet</group>
+      <name>parquet-column</name>
+      <version>1.18.1</version>
+      <description>Parquet is a columnar storage format that supports nested data. This provides the java implementation.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">057199287ecb17e6911b1b3067e8f3fc</hash>
+        <hash alg="SHA-1">0320adcc8e349f66b162963a1ba81417ce60f0bb</hash>
+        <hash alg="SHA-256">2bfc18fbf3fe8e971780a080e46f6d6cb3e69695ad3a746bd11d46ea8fd90171</hash>
+        <hash alg="SHA-512">26287d1f6c49471a6969dc47a33b560c313f408ed0fdec2192c62df6f47c0313ed8007b8bbdcf057d37337fa21d9981aa787d1e068ea349ad8263e215710e4e8</hash>
+        <hash alg="SHA-384">4650f212081170add8a4cc78fb421c42b7676e50e29f5662426704682308696306a85884c978d26831f7d00421dd35df</hash>
+        <hash alg="SHA3-384">ec304d895b2b1afca5356b5f7a371911bce26d7b18ff791dcf0b486549f2fe9b3a2b6e9285aa1110809ceb9f33e591b3</hash>
+        <hash alg="SHA3-256">9230b69bf8e95a189c8d1b28dfeb4aed08f4df3caab81b5a628590f0231afe0f</hash>
+        <hash alg="SHA3-512">88161e6c67ccb9982cf436a69515b1697ee3c4824ec0e693a15a5b92aa97eb33ca6fe7758ca62ae0c20540cc52ccba8b63a93ff6af4ca05b921f2f7cfe91e980</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.apache.parquet/parquet-column@1.18.1?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://parquet.apache.org</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://repository.apache.org/service/local/staging/deploy/maven2</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://github.com/apache/parquet-java/issues</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>dev-subscribe@parquet.apache.org</url>
+        </reference>
+        <reference type="vcs">
+          <url>scm:git:git@github.com:apache/parquet-java.git/parquet-column</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.apache.parquet/parquet-encoding@1.18.1?type=jar">
+      <publisher>The Apache Software Foundation</publisher>
+      <group>org.apache.parquet</group>
+      <name>parquet-encoding</name>
+      <version>1.18.1</version>
+      <description>Parquet is a columnar storage format that supports nested data. This provides the java implementation.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">6fdae1b2dbbf65524a29d4be805c5024</hash>
+        <hash alg="SHA-1">fa2a6a5b5b4deb82d6ba1ce8dbeaf8945991f4b1</hash>
+        <hash alg="SHA-256">a9414b00d8a4658933476aab8a7a64c51ad669fd7b752cbe5809bcd0e29e2c00</hash>
+        <hash alg="SHA-512">d1847e7b7fc9f208516742a5c4ddd097b161fd71c697ffc84858508831b6eaa40ff212287ce47f9b569512768e0a2b6ce702967cca7ed099a57ee7a7759ccd08</hash>
+        <hash alg="SHA-384">2f4e4a77d693d96e0ed1ebd17844f73794ee5c66879df063d9fb8cff316936b948789ec3c1e32480d2ec73f577252189</hash>
+        <hash alg="SHA3-384">617d4182983bc42b1553b2e1404febff7c65e1e2c2c274fa0b5494f77dd7fb2f9699331a862fd2f6c6d056b30de0c5ee</hash>
+        <hash alg="SHA3-256">1feb33d0abed0fb61505539290e42b4a01d4ae3221419014fcf607389a09eadd</hash>
+        <hash alg="SHA3-512">1ac5d86eabe3df5ebf0b4b22eca2c8373ba7631263531a24b4777d2c1f4fbdafd0ee99744fa81becdb247d62e5bf0390a3cb1d021c351f4996bc8e5229cfb9fe</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.apache.parquet/parquet-encoding@1.18.1?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://parquet.apache.org</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://repository.apache.org/service/local/staging/deploy/maven2</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://github.com/apache/parquet-java/issues</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>dev-subscribe@parquet.apache.org</url>
+        </reference>
+        <reference type="vcs">
+          <url>scm:git:git@github.com:apache/parquet-java.git/parquet-encoding</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.locationtech.jts/jts-core@1.20.0?type=jar">
+      <group>org.locationtech.jts</group>
+      <name>jts-core</name>
+      <version>1.20.0</version>
+      <description>The JTS Topology Suite is an API for 2D linear geometry predicates and functions.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">8de91edea80ac2de00c07226458649fb</hash>
+        <hash alg="SHA-1">25b72c9548a328cb1aea8a6b89d710a31ade5403</hash>
+        <hash alg="SHA-256">6a783d8f9dba3d3cf7265435f134402f63c05838aa6cbcc4297ad3a5b2842baf</hash>
+        <hash alg="SHA-512">3d6e32203f36517447cc027d741d1be301d454d34707d9fcb870d49dd686e7f1f72cff4b36bdd90ed8f2bee7e3afade7b3a1457de9c15777b91f47cdace91a6e</hash>
+        <hash alg="SHA-384">5a9f3ca93e90797313a7983a54edd80c44a48ba46647677b934b46e23273b2facbea8b752353dd47d6ee18e2a92779b6</hash>
+        <hash alg="SHA3-384">02182b13041cdf61fc75323cc34dc7676b175fb34a05dd002f3da6fd190201655949bfff4c5875cc36d0b8bfbab31e4f</hash>
+        <hash alg="SHA3-256">8ac7798576ed86c7873e85319bc4e0c205373928517859f9a53c9e74d057781d</hash>
+        <hash alg="SHA3-512">6927a7e2cb64065d3b7d3a01443804e189d560b840ce93afd34e77894b281e0387f5fdb9fa2bde9381781bdd979cfc3e4399d6d8091fd8d6d0c2f89001450223</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>EPL-2.0</id>
+        </license>
+        <license>
+          <id>BSD-3-Clause</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.locationtech.jts/jts-core@1.20.0?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://www.locationtech.org/projects/technology.jts/jts-modules/jts-core</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/locationtech/jts/jts-modules/jts-core</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.apache.parquet/parquet-hadoop@1.18.1?type=jar">
+      <publisher>The Apache Software Foundation</publisher>
+      <group>org.apache.parquet</group>
+      <name>parquet-hadoop</name>
+      <version>1.18.1</version>
+      <description>Parquet is a columnar storage format that supports nested data. This provides the java implementation.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">78805885ca43ce1c33f381fc0fe9a9ba</hash>
+        <hash alg="SHA-1">4a1bef6a5b9003889d02d141e0da82f885b9ddc3</hash>
+        <hash alg="SHA-256">efbf7b0374a14f075afbad53632fb6ed76d39239ce39d970f581f3512d00ee0b</hash>
+        <hash alg="SHA-512">41f0d0af74d66811dae2590d26155d5470ee9362874be360035e92fbb1c831b4019f7d8e02b55b5bb8e3bbed19e8b4784290819ca89c90f5000a7751dff5d588</hash>
+        <hash alg="SHA-384">a58d4eab32631f57ccf0b48dc785f17b168dce8a5239ec5d2be4e169eb21516f449e95db979258ea4e6d50d021df3bc9</hash>
+        <hash alg="SHA3-384">543f51e8c825a99662c7f864139899a6b9b1ae93e1e6f12aad421801c0f16a9904f149adfcc2bb41a684479ad7e73b5c</hash>
+        <hash alg="SHA3-256">f9b2cb35ad7e655f7962f7a9c874eab2b36b2c88c82e5bd3cad974abf644f82b</hash>
+        <hash alg="SHA3-512">85eae710ed95eecbab56e0fc72917be3d90c1d163bef5bbdb12e8e312d35de66da5b912c7fccad7735f8b9d445227d0a35e1d07ed06ceea3e37c364e80631f46</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.apache.parquet/parquet-hadoop@1.18.1?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://parquet.apache.org</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://repository.apache.org/service/local/staging/deploy/maven2</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://github.com/apache/parquet-java/issues</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>dev-subscribe@parquet.apache.org</url>
+        </reference>
+        <reference type="vcs">
+          <url>scm:git:git@github.com:apache/parquet-java.git/parquet-hadoop</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.xerial.snappy/snappy-java@1.1.10.8?type=jar">
+      <publisher>xerial.org</publisher>
+      <group>org.xerial.snappy</group>
+      <name>snappy-java</name>
+      <version>1.1.10.8</version>
+      <description>snappy-java: A fast compression/decompression library</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">a25bd213d1ca2f3c605c5f03050db070</hash>
+        <hash alg="SHA-1">ccbaa2b5ea6a023a27c44daf2d6cdec0e138592d</hash>
+        <hash alg="SHA-256">50485d06037fea3d6e40c968386feeca6338cc9872e25549593ff3eb352cefcc</hash>
+        <hash alg="SHA-512">c7133f726f366b9f06df98d94b4dd7c91c7702c543e1a318055a886af5e625d8231b0a6728250596181bc20a6c4147855eeb02ed55c447fe13ff2156e29985a9</hash>
+        <hash alg="SHA-384">aeb78b3f4c56ce769f5fda9cfabe00be77d21b93637f70601c28b16eef41405e1291001c3a6e45001b356543e33b664b</hash>
+        <hash alg="SHA3-384">6137f6354b574d8decb579ad9147dd9463e3a9f62d1e929266bee1adc020f57382973d0a1abf9daeb2007bb32671fed8</hash>
+        <hash alg="SHA3-256">f44a4a8cffe82ce6c99b401e9d822e71cdfc63c1b279b278282eda07243b2a94</hash>
+        <hash alg="SHA3-512">655731ef3b20a2cec213138c170f7dc7182c2a09536d74c1d8a13224bb204dd706a35749bf99b51c4b945b75784a0a26c60931a158d27e1378ccd1c8ac7a0783</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+          <url>https://www.apache.org/licenses/LICENSE-2.0</url>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.xerial.snappy/snappy-java@1.1.10.8?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/xerial/snappy-java</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/xerial/snappy-java</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/io.airlift/aircompressor@2.0.3?type=jar">
+      <group>io.airlift</group>
+      <name>aircompressor</name>
+      <version>2.0.3</version>
+      <description>Compression algorithms</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">6bc89228727ab2a3ed7df7cecef85158</hash>
+        <hash alg="SHA-1">d7032ede4ff2c124d4913807ebd6868af66f1721</hash>
+        <hash alg="SHA-256">b86bb66f610079e0bf790d62e2ff68853eb0dc4748a6d68ae28bce92b68094aa</hash>
+        <hash alg="SHA-512">726f9c919b8bc517b247954b93701e10dd68fa2d62bef6a5aad4a6dc9e1137bae97755d4dbd0bf799513e1a7fcaae733ede7ade42b6d9bdca6f93784297539c0</hash>
+        <hash alg="SHA-384">398a184408d407798bbce8ecf72c064de31797017e5cf197a785467aae13f2f1b3746aec096cdf6b8c401a3500a02833</hash>
+        <hash alg="SHA3-384">570b3fe83097e77cad881f608aecc984f4d6c4937654b6cc0f72070767cb259202fdce69bd84344dcd960d8a271f0c81</hash>
+        <hash alg="SHA3-256">2e27dc2de17cfb514cd49d9fea569aa965defa2c1a784c662a7c890a556183c9</hash>
+        <hash alg="SHA3-512">f43d2d8da54e3c47125661fda170802426f621a8d5d937a9126db5e6e4ca779a549b206da9c9276febf47ee3bc497d77f64a14bb812088c6cff2ffdb9e156041</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+          <url>https://www.apache.org/licenses/LICENSE-2.0</url>
+        </license>
+      </licenses>
+      <purl>pkg:maven/io.airlift/aircompressor@2.0.3?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/airlift/aircompressor</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://repo.maven.apache.org/maven2/</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/airlift/aircompressor/tree/release-2.x</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/commons-pool/commons-pool@1.6?type=jar">
+      <publisher>The Apache Software Foundation</publisher>
+      <group>commons-pool</group>
+      <name>commons-pool</name>
+      <version>1.6</version>
+      <description>Commons Object Pooling Library</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">5ca02245c829422176d23fa530e919cc</hash>
+        <hash alg="SHA-1">4572d589699f09d866a226a14b7f4323c6d8f040</hash>
+        <hash alg="SHA-256">46c42b4a38dc6b2db53a9ee5c92c63db103665d56694e2cfce2c95d51a6860cc</hash>
+        <hash alg="SHA-512">3bf5bcdbd7342e794f95747421c510778d8656d7ca901eb9b0fd15b9edb5b470e799c76abce9fe5958355d0d6067565ab71897d02462232176a0145a7d546e69</hash>
+        <hash alg="SHA-384">9dd327008604be77bad6fcf249f2806c9b6b6b9858ff35ceff74d6954ea5f66c162c92ba7a24f5da3ad9694b445a644a</hash>
+        <hash alg="SHA3-384">c3295ce0994916658580fc046aa12e48559f43cde61a95aeb3ffe87d71b8b797ac9a2537825cc338ced5c09e37fe5285</hash>
+        <hash alg="SHA3-256">5c20f6777fbb2221e461f2855a99d7761635a0eaaf0fd992f9aeb8042a185c95</hash>
+        <hash alg="SHA3-512">a5294db60c04c0603d982af2c2b46f0052c5ff73f8a4298a01c378050f3476199e5c678b754604a76d68eb537ba4d4f30edddb16a8447b76b5b947922a00f5f2</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/commons-pool/commons-pool@1.6?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://commons.apache.org/pool/</url>
+        </reference>
+        <reference type="build-system">
+          <url>http://vmbuild.apache.org/continuum/</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://repository.apache.org/service/local/staging/deploy/maven2</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>http://issues.apache.org/jira/browse/POOL</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>http://mail-archives.apache.org/mod_mbox/commons-user/</url>
+        </reference>
+        <reference type="vcs">
+          <url>http://svn.apache.org/viewvc/commons/proper/pool/trunk</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.github.luben/zstd-jni@1.5.7-15?type=jar">
+      <publisher>com.github.luben</publisher>
+      <group>com.github.luben</group>
+      <name>zstd-jni</name>
+      <version>1.5.7-15</version>
+      <description>JNI bindings for Zstd native library that provides fast and high compression lossless algorithm for Java and all JVM languages.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">3191750939ebb3080ff0f8d006bd5641</hash>
+        <hash alg="SHA-1">7a3774ad80cf7644eb41b2981010d47b20e31bc4</hash>
+        <hash alg="SHA-256">88af05c50951c2c8d0fe10c7b3451736204fcc389eaad01e767e7acc64e75fe2</hash>
+        <hash alg="SHA-512">d98e7743c1e7da96ea7d8932fee7d817871c5798ce56c73d57eb5ac2ae13f26fb2e1d2f8cf39e9abf0a95edefe11d7225866d7839c7d8ea9be4fc56c0e70ed1c</hash>
+        <hash alg="SHA-384">8c5e235c6e270dfbdc8ee8c939be2b313b6e6fffd724de4521828dbd93c2967cf5c7b897d830a5a04e0ff5596a351603</hash>
+        <hash alg="SHA3-384">851154a57829638df1b68addd4de154ebd253c3e3d2e32471fe3d57280e308435054c5228a0785052f1635438e1da55e</hash>
+        <hash alg="SHA3-256">aeb3d8ea05c447515d8098599f01ac6248882bca3ad947360d1d15502c7a4b5e</hash>
+        <hash alg="SHA3-512">caec87cda02cea301159a219dfbd1ba3d98414aa6c292a9628c4ffd60013d293d7f098026be43a89a19c8c660ae92952690b96200758ac28ce77bf7e32507988</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>BSD-2-Clause</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/com.github.luben/zstd-jni@1.5.7-15?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/luben/zstd-jni</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/org.apache.parquet/parquet-jackson@1.18.1-deepbi1?type=jar">
+      <publisher>The Apache Software Foundation</publisher>
+      <group>org.apache.parquet</group>
+      <name>parquet-jackson</name>
+      <version>1.18.1-deepbi1</version>
+      <description>Parquet is a columnar storage format that supports nested data. This provides the java implementation.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">c8b06ca0cd0ca41f886fcd202572f264</hash>
+        <hash alg="SHA-1">705545de4038b5e37ef6f804bf4831a033256687</hash>
+        <hash alg="SHA-256">9fb8b046f4aaee3e942af2344589060bd4db56dae2e175bb8f38bf35784e491d</hash>
+        <hash alg="SHA-512">8191f1bf316f80f9fc59163da17db3117f16b0d67f4d60d2edaa65a103eb3339e0e4f133af138d0522c81e91ec8b3e6ba5b315b1b5414fbd0fde5a24d047b767</hash>
+        <hash alg="SHA-384">80742c302b6e2e5c26a82d45b8d2d1a7720fcaab31c38a744a327fe155ada0bc2368f78065577641c97e26252e2a3ec5</hash>
+        <hash alg="SHA3-384">f7ffa6a176c3ff6353abf689a167d3910173d7f3e7de3a65af24efe176ef2fa07319306c5128b06e1f6d6c4b3b2a95c5</hash>
+        <hash alg="SHA3-256">feaa00849f23dadd8a85213d40e2be433793fae517b2641995c2aed5ad60de0b</hash>
+        <hash alg="SHA3-512">af43ab7992149fb4b37aee636319e25164e8963359e414603713645572e34fba635c409e8cd1583e71eb9a593afb9cc475b3c09f1191d7215eeeda44258d26ec</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/org.apache.parquet/parquet-jackson@1.18.1-deepbi1?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://parquet.apache.org</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://repository.apache.org/service/local/staging/deploy/maven2</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://github.com/apache/parquet-java/issues</url>
+        </reference>
+        <reference type="mailing-list">
+          <url>dev-subscribe@parquet.apache.org</url>
+        </reference>
+        <reference type="vcs">
+          <url>scm:git:git@github.com:apache/parquet-java.git/parquet-jackson</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.fasterxml.jackson.core/jackson-core@2.22.4?type=jar">
+      <publisher>FasterXML</publisher>
+      <group>com.fasterxml.jackson.core</group>
+      <name>jackson-core</name>
+      <version>2.22.4</version>
+      <description>Core Jackson processing abstractions (aka Streaming API), implementation for JSON</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">fa9ba32880026c653cc151bed0c28498</hash>
+        <hash alg="SHA-1">d753ae59bae7dcb183f856da541c5b27272088ce</hash>
+        <hash alg="SHA-256">2d30c375cddea9657a1e1ef97547a2694b663b355facb4de53a097782b312d1a</hash>
+        <hash alg="SHA-512">3b0d500043699ce40fc6befc04c9dbf3e8067de453098fba53d1891793bd3da80955e44536d113fac6fc8fb58264e47b265ab3466b3c6fd4bca111487ac24700</hash>
+        <hash alg="SHA-384">8b3beecfc5464c704601fe9cfe90ccabb7090381676da9d7514b27c979c4580baa1a343c9724146fc86c0568cad6d53c</hash>
+        <hash alg="SHA3-384">30e3394466b713fa98b37e6d98948d38b26e2be090f35902f3416fa93c69c78d7d5e69d035a8403d720bb7106f29e716</hash>
+        <hash alg="SHA3-256">edc5681da0d239439298ed33621f4aa1991aeca9a29be0c1d6ba76036dd8dfdc</hash>
+        <hash alg="SHA3-512">9e9e02839c0cbe5c5aafb5af23d25db2bc71754a10c18998aee1fe7d216fdf7dd6602859480d5e76991f9393587ac215633f9a1740329715db40904532aaf483</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/com.fasterxml.jackson.core/jackson-core@2.22.4?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/FasterXML/jackson-core</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://central.sonatype.com/api/v1/publisher</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://github.com/FasterXML/jackson-core/issues</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/FasterXML/jackson-core</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.22?type=jar">
+      <publisher>FasterXML</publisher>
+      <group>com.fasterxml.jackson.core</group>
+      <name>jackson-annotations</name>
+      <version>2.22</version>
+      <description>Core annotations used for value types, used by Jackson data binding package.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">04c11c456fd1e21b9a21c25c665109cc</hash>
+        <hash alg="SHA-1">15c67f9498d6934cff9510fc70c5a12e52290457</hash>
+        <hash alg="SHA-256">21ddb598807d3a51a876704eb979d9296e1c6a6f47ab1826ff88c6d6a127a2d0</hash>
+        <hash alg="SHA-512">63b597ec02b4e31c57266d9b96f05f301f217bc12ffb7ba046a5658d2829728930a559947b98eb6c3cc448413a96b4939427aa669ae1e2dc3597ab5d5d287f9f</hash>
+        <hash alg="SHA-384">35b6fe651afeed54d1e6f7a39ac6cf6fdbafacdf2e3bdff7b29b965ccb79a0c53342a56bf0ecea4d6c4c4651b1d6aa19</hash>
+        <hash alg="SHA3-384">72267dc54c4175c42ca0dd430a87b12cc68619a8777be2048e1d2f0747db884a568b5c346c77c9c8c0714ab96018f5f7</hash>
+        <hash alg="SHA3-256">6bfc7b4ba70779fe5f0b1e2af585abab982f7929a68beb2c0e62ea2e2a321de0</hash>
+        <hash alg="SHA3-512">3f1bdfa32f7df76ac14cd2a3e689b65066fa0a6a760a9b8b1121773bb1b043a44587d4148c67f361dc6c630e6b31f29b2691a57d47caabea5ca23ae44af34a5e</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.22?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/FasterXML/jackson</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://central.sonatype.com/api/v1/publisher</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://github.com/FasterXML/jackson-annotations/issues</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/FasterXML/jackson-annotations</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.22.4?type=jar">
+      <publisher>FasterXML</publisher>
+      <group>com.fasterxml.jackson.core</group>
+      <name>jackson-databind</name>
+      <version>2.22.4</version>
+      <description>General data-binding functionality for Jackson: works on core streaming API</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">e782b43929d9cb465924a105bdbf2db8</hash>
+        <hash alg="SHA-1">1ff5a55d62432f57e8044394976e598af0c5b3b8</hash>
+        <hash alg="SHA-256">d4cbf8947087f305869826801913abdc50735a1fab2074a1993e7bc67ca974a3</hash>
+        <hash alg="SHA-512">688ee3a248895070623288bbbd1050e1c14f54d24ddac9be1e624e264eed8d88a6ca07ae90af6056bed1e5f1d0c9ac9db503cbcaaa45db7ba8ca213d3387dde6</hash>
+        <hash alg="SHA-384">82b6ee17013047935bf6da141a1084a625200883c04984c6d07b65ea41925b7eeee1674aeffcef37d1e724e6727951a6</hash>
+        <hash alg="SHA3-384">39acae150a64e2fead35eecc17bd17f3fae8c003ff493899da4e540cd6af292e883b5d71102066efff91b83c256fcc27</hash>
+        <hash alg="SHA3-256">a7729d3990f1a7ca650383073604455f172d267b0152465880ad5bc0efa6741f</hash>
+        <hash alg="SHA3-512">8f01016a09ec87f9d182f006026d3c14d7098b3548aa34501db40a3b823c933ac278b7148c96606c8c441a746ea63f0f8ceb6fa7067546649816c678ab4a5962</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.22.4?type=jar</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/FasterXML/jackson</url>
+        </reference>
+        <reference type="distribution-intake">
+          <url>https://central.sonatype.com/api/v1/publisher</url>
+        </reference>
+        <reference type="issue-tracker">
+          <url>https://github.com/FasterXML/jackson-databind/issues</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/FasterXML/jackson-databind</url>
+        </reference>
+      </externalReferences>
+    </component>
+  </components>
+  <dependencies>
+    <dependency ref="pkg:maven/org.apache.parquet/parquet-hadoop-bundle@1.18.1-deepbi1?type=jar">
+      <dependency ref="pkg:maven/org.apache.parquet/parquet-common@1.18.1?type=jar"/>
+      <dependency ref="pkg:maven/org.apache.parquet/parquet-column@1.18.1?type=jar"/>
+      <dependency ref="pkg:maven/org.apache.parquet/parquet-hadoop@1.18.1?type=jar"/>
+      <dependency ref="pkg:maven/org.apache.parquet/parquet-jackson@1.18.1-deepbi1?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.apache.parquet/parquet-common@1.18.1?type=jar">
+      <dependency ref="pkg:maven/org.apache.parquet/parquet-format-structures@1.18.1?type=jar"/>
+      <dependency ref="pkg:maven/org.slf4j/slf4j-api@1.7.33?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.apache.parquet/parquet-format-structures@1.18.1?type=jar">
+      <dependency ref="pkg:maven/javax.annotation/javax.annotation-api@1.3.2?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/javax.annotation/javax.annotation-api@1.3.2?type=jar"/>
+    <dependency ref="pkg:maven/org.slf4j/slf4j-api@1.7.33?type=jar"/>
+    <dependency ref="pkg:maven/org.apache.parquet/parquet-column@1.18.1?type=jar">
+      <dependency ref="pkg:maven/org.apache.parquet/parquet-common@1.18.1?type=jar"/>
+      <dependency ref="pkg:maven/org.apache.parquet/parquet-encoding@1.18.1?type=jar"/>
+      <dependency ref="pkg:maven/org.slf4j/slf4j-api@1.7.33?type=jar"/>
+      <dependency ref="pkg:maven/org.locationtech.jts/jts-core@1.20.0?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.apache.parquet/parquet-encoding@1.18.1?type=jar">
+      <dependency ref="pkg:maven/org.apache.parquet/parquet-common@1.18.1?type=jar"/>
+      <dependency ref="pkg:maven/org.slf4j/slf4j-api@1.7.33?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.locationtech.jts/jts-core@1.20.0?type=jar"/>
+    <dependency ref="pkg:maven/org.apache.parquet/parquet-hadoop@1.18.1?type=jar">
+      <dependency ref="pkg:maven/org.apache.parquet/parquet-column@1.18.1?type=jar"/>
+      <dependency ref="pkg:maven/org.apache.parquet/parquet-format-structures@1.18.1?type=jar"/>
+      <dependency ref="pkg:maven/org.apache.parquet/parquet-common@1.18.1?type=jar"/>
+      <dependency ref="pkg:maven/org.apache.parquet/parquet-jackson@1.18.1-deepbi1?type=jar"/>
+      <dependency ref="pkg:maven/org.xerial.snappy/snappy-java@1.1.10.8?type=jar"/>
+      <dependency ref="pkg:maven/io.airlift/aircompressor@2.0.3?type=jar"/>
+      <dependency ref="pkg:maven/commons-pool/commons-pool@1.6?type=jar"/>
+      <dependency ref="pkg:maven/com.github.luben/zstd-jni@1.5.7-15?type=jar"/>
+      <dependency ref="pkg:maven/org.slf4j/slf4j-api@1.7.33?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.apache.parquet/parquet-jackson@1.18.1-deepbi1?type=jar">
+      <dependency ref="pkg:maven/com.fasterxml.jackson.core/jackson-core@2.22.4?type=jar"/>
+      <dependency ref="pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.22?type=jar"/>
+      <dependency ref="pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.22.4?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/com.fasterxml.jackson.core/jackson-core@2.22.4?type=jar"/>
+    <dependency ref="pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.22?type=jar"/>
+    <dependency ref="pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.22.4?type=jar">
+      <dependency ref="pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.22?type=jar"/>
+      <dependency ref="pkg:maven/com.fasterxml.jackson.core/jackson-core@2.22.4?type=jar"/>
+    </dependency>
+    <dependency ref="pkg:maven/org.xerial.snappy/snappy-java@1.1.10.8?type=jar"/>
+    <dependency ref="pkg:maven/io.airlift/aircompressor@2.0.3?type=jar"/>
+    <dependency ref="pkg:maven/commons-pool/commons-pool@1.6?type=jar"/>
+    <dependency ref="pkg:maven/com.github.luben/zstd-jni@1.5.7-15?type=jar"/>
+  </dependencies>
+</bom>

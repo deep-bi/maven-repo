@@ -1,0 +1,1347 @@
+{
+  "bomFormat" : "CycloneDX",
+  "specVersion" : "1.6",
+  "serialNumber" : "urn:uuid:d7b85919-1230-3878-ac0c-905c50bc297d",
+  "version" : 1,
+  "metadata" : {
+    "lifecycles" : [
+      {
+        "phase" : "build"
+      }
+    ],
+    "tools" : {
+      "components" : [
+        {
+          "type" : "library",
+          "author" : "OWASP Foundation",
+          "group" : "org.cyclonedx",
+          "name" : "cyclonedx-maven-plugin",
+          "version" : "2.9.2",
+          "description" : "CycloneDX Maven plugin",
+          "hashes" : [
+            {
+              "alg" : "MD5",
+              "content" : "843a7130400f75d33f563dc7e9f52dea"
+            },
+            {
+              "alg" : "SHA-1",
+              "content" : "2cac5a176b9f48801dfc4910d4f6a34bfbb13445"
+            },
+            {
+              "alg" : "SHA-256",
+              "content" : "d9e5a12bac3c1a91d85f3a1ad84307099f457ff24aa65b438ba7de9ca784a54e"
+            },
+            {
+              "alg" : "SHA-512",
+              "content" : "636f788518752c5a23d14bad41d68b0d549e4b3a3d720d66f2f6e2b8b956207942ee12abba968a1e9aac6cf1d78d9e738a4a75eeb8bc6fca2377030fbb482407"
+            },
+            {
+              "alg" : "SHA-384",
+              "content" : "72aad41633b92fadd4dbd1c6f5c1b956836b22d3b96afbdd7ca8b8eb0456eec00c2ed658e3c2d4e93d95048bcc23dac8"
+            },
+            {
+              "alg" : "SHA3-384",
+              "content" : "9837cee0f9b7d575f8d88df3ad6f58a075032ad2635e0987abbc102240327f1cec87dc062b3034009f028ab5baf988f9"
+            },
+            {
+              "alg" : "SHA3-256",
+              "content" : "4c654267cde6eb6d295dbc06b33e33528412bee57549dae89c85b8df8202dbcb"
+            },
+            {
+              "alg" : "SHA3-512",
+              "content" : "f7da73632ef2fd1c2d85f0cf5eebc2b6a3ff1ae2ed0945442e679da71490562a2ff6b67422dbd5285f4042eda6637e6f3544f62825a625b38efacfdebc8df137"
+            }
+          ]
+        }
+      ]
+    },
+    "component" : {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.apache.parquet/parquet-hadoop-bundle@1.18.1-deepbi1?type=jar",
+      "publisher" : "The Apache Software Foundation",
+      "group" : "org.apache.parquet",
+      "name" : "parquet-hadoop-bundle",
+      "version" : "1.18.1-deepbi1",
+      "description" : "Parquet is a columnar storage format that supports nested data. This provides the java implementation.",
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.apache.parquet/parquet-hadoop-bundle@1.18.1-deepbi1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://parquet.apache.org"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://repository.apache.org/service/local/staging/deploy/maven2"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/apache/parquet-java/issues"
+        },
+        {
+          "type" : "mailing-list",
+          "url" : "dev-subscribe@parquet.apache.org"
+        },
+        {
+          "type" : "vcs",
+          "url" : "scm:git:git@github.com:apache/parquet-java.git/parquet-hadoop-bundle"
+        }
+      ]
+    },
+    "properties" : [
+      {
+        "name" : "maven.goal",
+        "value" : "makeBom"
+      },
+      {
+        "name" : "maven.scopes",
+        "value" : "compile,provided,runtime,system"
+      },
+      {
+        "name" : "cdx:reproducible",
+        "value" : "enabled"
+      }
+    ]
+  },
+  "components" : [
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.apache.parquet/parquet-common@1.18.1?type=jar",
+      "publisher" : "The Apache Software Foundation",
+      "group" : "org.apache.parquet",
+      "name" : "parquet-common",
+      "version" : "1.18.1",
+      "description" : "Parquet is a columnar storage format that supports nested data. This provides the java implementation.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "2e887173a07b7061f859e339daf052dd"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "1eea5ca8cd78b3b5ea303104d23d949b1c682a8c"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "a8c710f2d0ddb4b1332e596cd91f74305b66ae1d7235c798a8b48ddbfb9d31d6"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "d85693eb65e4b7ace98e45e77c89dba04fe6d5b8095a987375e9e2262e0de794867d8f05691cbe6639ffb3645ae0ff2ecf30edfbc2379dc15669f43a09f10e38"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "4ff02d0da5bf2b35f4c23f805f985bc99c85e70cbef3218d2f8e2d8051bf8635b9f0bf615fe19c45240642e932ed529b"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "331eebac76f3467821a9f7a0efb32a593b455f1b768a63f9e4bec8383b2736fc16521ca9e5fc1fbbfef8421028c77242"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "635a1e40a23fc5a8385f507d01152c30f1e0b8da530c3971b62dff64434f526f"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "250ffe40d260dea24c12c97b9a223b7e2add301b49042d718bbe7cfca4db5d8ec1d61384a91ac835ad00b6d9e15eddc08d22bf63348a14d14ce7a53aabf768ec"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.apache.parquet/parquet-common@1.18.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://parquet.apache.org"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://repository.apache.org/service/local/staging/deploy/maven2"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/apache/parquet-java/issues"
+        },
+        {
+          "type" : "mailing-list",
+          "url" : "dev-subscribe@parquet.apache.org"
+        },
+        {
+          "type" : "vcs",
+          "url" : "scm:git:git@github.com:apache/parquet-java.git/parquet-common"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.apache.parquet/parquet-format-structures@1.18.1?type=jar",
+      "publisher" : "The Apache Software Foundation",
+      "group" : "org.apache.parquet",
+      "name" : "parquet-format-structures",
+      "version" : "1.18.1",
+      "description" : "Parquet-mr related java classes to use the parquet-format thrift structures.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "1c24323ab07d9807985f07db16016ddb"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "b517993cbce0398f0b62e8da40b5336ede3176c8"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "6613a8fd105c4f7f1578ff1f39476c30fdf485b0ac714c30444a9f70045892bb"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "2a9d92bc51a9214afa84bb5ea24f7abe0b7d34591a28715ae7e728968db4bba16ab1ce9e9673d403efe8fe6e2dfd75a381669a5a9dcd3a9641f89b00bebf4cc7"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "e40e60be1ffbab944ae3c571e8d40121212c3ebf4661dd1a45280f1795bd6cbc8b680bc543e058adf61f349ea472ecf5"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "04da7d21de52776b827ce98fa7dfef43566921856186486cde80d0c857e3ec65cef9d8134b04dca38b5ae7d124fe30cb"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "feb7026a8ac5e670e9c354c1d02937e7a2491f5fce765cad5494fb0cb116eaaf"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "0b19d4d096d81581295980c36d6526f57d02b103f41d680984cf798c13449550298089d5f72c96c9f6b87f5810f39ec830f62b17725079c760ba42df9871a52d"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.apache.parquet/parquet-format-structures@1.18.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://parquet.apache.org/"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://repository.apache.org/service/local/staging/deploy/maven2"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/apache/parquet-java/issues"
+        },
+        {
+          "type" : "mailing-list",
+          "url" : "dev-subscribe@parquet.apache.org"
+        },
+        {
+          "type" : "vcs",
+          "url" : "scm:git:git@github.com:apache/parquet-java.git/parquet-format-structures"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/javax.annotation/javax.annotation-api@1.3.2?type=jar",
+      "publisher" : "GlassFish Community",
+      "group" : "javax.annotation",
+      "name" : "javax.annotation-api",
+      "version" : "1.3.2",
+      "description" : "Common Annotations for the JavaTM Platform API",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "2ab1973eefffaa2aeec47d50b9e40b9d"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "934c04d3cfef185a8008e7bf34331b79730a9d43"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "e04ba5195bcd555dc95650f7cc614d151e4bcd52d29a10b8aa2197f3ab89ab9b"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "679cf44c3b9d635b43ed122a555d570292c3f0937c33871c40438a1a53e2058c80578694ec9466eac9e280e19bfb7a95b261594cc4c1161c85dc97df6235e553"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "fc0058495e54efb6e05a34e3ff422e7c8347bcc77d6d9b87e9253424968dee6ef6a215c318d7e54f8705276be81f0682"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "ed6464b715de6ced0d9981a3f28140824946a4b7a02ffaff6116c833bb36e8f77a6282ce63c0d82cfe841d4fd6916891"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "ecfc9bef24ae28cf94c6775ecf6e2086d90a25d8d5476a4f6bb24001601b6cd0"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "f2b333527faedf504f60aa70a3d491972fa76f7e61e6351027f74613f41001157656824fe312b6e1df6dc4979704fe2a745b618d5368a97fe0bf8749739de9e2"
+        }
+      ],
+      "licenses" : [
+        {
+          "expression" : "(CDDL-1.0 OR GPL-2.0-with-classpath-exception)"
+        }
+      ],
+      "purl" : "pkg:maven/javax.annotation/javax.annotation-api@1.3.2?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "http://jcp.org/en/jsr/detail?id=250"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://maven.java.net/service/local/staging/deploy/maven2/"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/javaee/javax.annotation/issues"
+        },
+        {
+          "type" : "mailing-list",
+          "url" : "javaee-spec@javaee.groups.io"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/javaee/javax.annotation"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.slf4j/slf4j-api@1.7.33?type=jar",
+      "publisher" : "QOS.ch",
+      "group" : "org.slf4j",
+      "name" : "slf4j-api",
+      "version" : "1.7.33",
+      "description" : "The slf4j API",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "de8684fca5e9042d0120cb3306e8278f"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "d375aa1b98d34d5ddf73a3f19eaad66e98975b12"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "336811855ee97fcd8413343dc42f4d26362502860e8a9193e4db305e3e8ef80a"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "ccde4a938e90d683288f84375224ecd9b46aca20de7544c6300c82ef07780d25306239ea9c5565c3ff58038c9d5becc85c846df3c1809585ae33b20a32e6b8d9"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "dd31ce1f4fa4c7a892388422b4694d8a51bac05e4f2789eb7be734cdb2738f9f796eb951cfe989834ec78a65d5d762b5"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "75d1aa5e386f2c71c598cda5b995ff5fd496e4003489d58d217be1951d24f5444c8de2fe7bf7a7ce9c40d6cfc0ee01b2"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "ef2ec74302de597f6eec560b04a8de12a331302cbd5b9c178c237c3b683426a5"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "4528a2981a1107261f6798c628075e9ac724060a72338e0ca8786b27162b17e358a96711b3d0cc673dff85d36fa9eb6eba907e15697b4c40a5236f140fb6a6f2"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "MIT",
+            "url" : "https://opensource.org/license/mit/"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.slf4j/slf4j-api@1.7.33?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "http://www.slf4j.org"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://oss.sonatype.org/service/local/staging/deploy/maven2/"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/qos-ch/slf4j/slf4j-api"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.apache.parquet/parquet-column@1.18.1?type=jar",
+      "publisher" : "The Apache Software Foundation",
+      "group" : "org.apache.parquet",
+      "name" : "parquet-column",
+      "version" : "1.18.1",
+      "description" : "Parquet is a columnar storage format that supports nested data. This provides the java implementation.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "057199287ecb17e6911b1b3067e8f3fc"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "0320adcc8e349f66b162963a1ba81417ce60f0bb"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "2bfc18fbf3fe8e971780a080e46f6d6cb3e69695ad3a746bd11d46ea8fd90171"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "26287d1f6c49471a6969dc47a33b560c313f408ed0fdec2192c62df6f47c0313ed8007b8bbdcf057d37337fa21d9981aa787d1e068ea349ad8263e215710e4e8"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "4650f212081170add8a4cc78fb421c42b7676e50e29f5662426704682308696306a85884c978d26831f7d00421dd35df"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "ec304d895b2b1afca5356b5f7a371911bce26d7b18ff791dcf0b486549f2fe9b3a2b6e9285aa1110809ceb9f33e591b3"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "9230b69bf8e95a189c8d1b28dfeb4aed08f4df3caab81b5a628590f0231afe0f"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "88161e6c67ccb9982cf436a69515b1697ee3c4824ec0e693a15a5b92aa97eb33ca6fe7758ca62ae0c20540cc52ccba8b63a93ff6af4ca05b921f2f7cfe91e980"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.apache.parquet/parquet-column@1.18.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://parquet.apache.org"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://repository.apache.org/service/local/staging/deploy/maven2"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/apache/parquet-java/issues"
+        },
+        {
+          "type" : "mailing-list",
+          "url" : "dev-subscribe@parquet.apache.org"
+        },
+        {
+          "type" : "vcs",
+          "url" : "scm:git:git@github.com:apache/parquet-java.git/parquet-column"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.apache.parquet/parquet-encoding@1.18.1?type=jar",
+      "publisher" : "The Apache Software Foundation",
+      "group" : "org.apache.parquet",
+      "name" : "parquet-encoding",
+      "version" : "1.18.1",
+      "description" : "Parquet is a columnar storage format that supports nested data. This provides the java implementation.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "6fdae1b2dbbf65524a29d4be805c5024"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "fa2a6a5b5b4deb82d6ba1ce8dbeaf8945991f4b1"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "a9414b00d8a4658933476aab8a7a64c51ad669fd7b752cbe5809bcd0e29e2c00"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "d1847e7b7fc9f208516742a5c4ddd097b161fd71c697ffc84858508831b6eaa40ff212287ce47f9b569512768e0a2b6ce702967cca7ed099a57ee7a7759ccd08"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "2f4e4a77d693d96e0ed1ebd17844f73794ee5c66879df063d9fb8cff316936b948789ec3c1e32480d2ec73f577252189"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "617d4182983bc42b1553b2e1404febff7c65e1e2c2c274fa0b5494f77dd7fb2f9699331a862fd2f6c6d056b30de0c5ee"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "1feb33d0abed0fb61505539290e42b4a01d4ae3221419014fcf607389a09eadd"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "1ac5d86eabe3df5ebf0b4b22eca2c8373ba7631263531a24b4777d2c1f4fbdafd0ee99744fa81becdb247d62e5bf0390a3cb1d021c351f4996bc8e5229cfb9fe"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.apache.parquet/parquet-encoding@1.18.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://parquet.apache.org"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://repository.apache.org/service/local/staging/deploy/maven2"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/apache/parquet-java/issues"
+        },
+        {
+          "type" : "mailing-list",
+          "url" : "dev-subscribe@parquet.apache.org"
+        },
+        {
+          "type" : "vcs",
+          "url" : "scm:git:git@github.com:apache/parquet-java.git/parquet-encoding"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.locationtech.jts/jts-core@1.20.0?type=jar",
+      "group" : "org.locationtech.jts",
+      "name" : "jts-core",
+      "version" : "1.20.0",
+      "description" : "The JTS Topology Suite is an API for 2D linear geometry predicates and functions.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "8de91edea80ac2de00c07226458649fb"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "25b72c9548a328cb1aea8a6b89d710a31ade5403"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "6a783d8f9dba3d3cf7265435f134402f63c05838aa6cbcc4297ad3a5b2842baf"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "3d6e32203f36517447cc027d741d1be301d454d34707d9fcb870d49dd686e7f1f72cff4b36bdd90ed8f2bee7e3afade7b3a1457de9c15777b91f47cdace91a6e"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "5a9f3ca93e90797313a7983a54edd80c44a48ba46647677b934b46e23273b2facbea8b752353dd47d6ee18e2a92779b6"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "02182b13041cdf61fc75323cc34dc7676b175fb34a05dd002f3da6fd190201655949bfff4c5875cc36d0b8bfbab31e4f"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "8ac7798576ed86c7873e85319bc4e0c205373928517859f9a53c9e74d057781d"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "6927a7e2cb64065d3b7d3a01443804e189d560b840ce93afd34e77894b281e0387f5fdb9fa2bde9381781bdd979cfc3e4399d6d8091fd8d6d0c2f89001450223"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "EPL-2.0"
+          }
+        },
+        {
+          "license" : {
+            "id" : "BSD-3-Clause"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.locationtech.jts/jts-core@1.20.0?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://www.locationtech.org/projects/technology.jts/jts-modules/jts-core"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://oss.sonatype.org/service/local/staging/deploy/maven2/"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/locationtech/jts/jts-modules/jts-core"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.apache.parquet/parquet-hadoop@1.18.1?type=jar",
+      "publisher" : "The Apache Software Foundation",
+      "group" : "org.apache.parquet",
+      "name" : "parquet-hadoop",
+      "version" : "1.18.1",
+      "description" : "Parquet is a columnar storage format that supports nested data. This provides the java implementation.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "78805885ca43ce1c33f381fc0fe9a9ba"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "4a1bef6a5b9003889d02d141e0da82f885b9ddc3"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "efbf7b0374a14f075afbad53632fb6ed76d39239ce39d970f581f3512d00ee0b"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "41f0d0af74d66811dae2590d26155d5470ee9362874be360035e92fbb1c831b4019f7d8e02b55b5bb8e3bbed19e8b4784290819ca89c90f5000a7751dff5d588"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "a58d4eab32631f57ccf0b48dc785f17b168dce8a5239ec5d2be4e169eb21516f449e95db979258ea4e6d50d021df3bc9"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "543f51e8c825a99662c7f864139899a6b9b1ae93e1e6f12aad421801c0f16a9904f149adfcc2bb41a684479ad7e73b5c"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "f9b2cb35ad7e655f7962f7a9c874eab2b36b2c88c82e5bd3cad974abf644f82b"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "85eae710ed95eecbab56e0fc72917be3d90c1d163bef5bbdb12e8e312d35de66da5b912c7fccad7735f8b9d445227d0a35e1d07ed06ceea3e37c364e80631f46"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.apache.parquet/parquet-hadoop@1.18.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://parquet.apache.org"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://repository.apache.org/service/local/staging/deploy/maven2"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/apache/parquet-java/issues"
+        },
+        {
+          "type" : "mailing-list",
+          "url" : "dev-subscribe@parquet.apache.org"
+        },
+        {
+          "type" : "vcs",
+          "url" : "scm:git:git@github.com:apache/parquet-java.git/parquet-hadoop"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.xerial.snappy/snappy-java@1.1.10.8?type=jar",
+      "publisher" : "xerial.org",
+      "group" : "org.xerial.snappy",
+      "name" : "snappy-java",
+      "version" : "1.1.10.8",
+      "description" : "snappy-java: A fast compression/decompression library",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "a25bd213d1ca2f3c605c5f03050db070"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "ccbaa2b5ea6a023a27c44daf2d6cdec0e138592d"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "50485d06037fea3d6e40c968386feeca6338cc9872e25549593ff3eb352cefcc"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "c7133f726f366b9f06df98d94b4dd7c91c7702c543e1a318055a886af5e625d8231b0a6728250596181bc20a6c4147855eeb02ed55c447fe13ff2156e29985a9"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "aeb78b3f4c56ce769f5fda9cfabe00be77d21b93637f70601c28b16eef41405e1291001c3a6e45001b356543e33b664b"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "6137f6354b574d8decb579ad9147dd9463e3a9f62d1e929266bee1adc020f57382973d0a1abf9daeb2007bb32671fed8"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "f44a4a8cffe82ce6c99b401e9d822e71cdfc63c1b279b278282eda07243b2a94"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "655731ef3b20a2cec213138c170f7dc7182c2a09536d74c1d8a13224bb204dd706a35749bf99b51c4b945b75784a0a26c60931a158d27e1378ccd1c8ac7a0783"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0",
+            "url" : "https://www.apache.org/licenses/LICENSE-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.xerial.snappy/snappy-java@1.1.10.8?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/xerial/snappy-java"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/xerial/snappy-java"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/io.airlift/aircompressor@2.0.3?type=jar",
+      "group" : "io.airlift",
+      "name" : "aircompressor",
+      "version" : "2.0.3",
+      "description" : "Compression algorithms",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "6bc89228727ab2a3ed7df7cecef85158"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "d7032ede4ff2c124d4913807ebd6868af66f1721"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "b86bb66f610079e0bf790d62e2ff68853eb0dc4748a6d68ae28bce92b68094aa"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "726f9c919b8bc517b247954b93701e10dd68fa2d62bef6a5aad4a6dc9e1137bae97755d4dbd0bf799513e1a7fcaae733ede7ade42b6d9bdca6f93784297539c0"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "398a184408d407798bbce8ecf72c064de31797017e5cf197a785467aae13f2f1b3746aec096cdf6b8c401a3500a02833"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "570b3fe83097e77cad881f608aecc984f4d6c4937654b6cc0f72070767cb259202fdce69bd84344dcd960d8a271f0c81"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "2e27dc2de17cfb514cd49d9fea569aa965defa2c1a784c662a7c890a556183c9"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "f43d2d8da54e3c47125661fda170802426f621a8d5d937a9126db5e6e4ca779a549b206da9c9276febf47ee3bc497d77f64a14bb812088c6cff2ffdb9e156041"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0",
+            "url" : "https://www.apache.org/licenses/LICENSE-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/io.airlift/aircompressor@2.0.3?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/airlift/aircompressor"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://repo.maven.apache.org/maven2/"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/airlift/aircompressor/tree/release-2.x"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/commons-pool/commons-pool@1.6?type=jar",
+      "publisher" : "The Apache Software Foundation",
+      "group" : "commons-pool",
+      "name" : "commons-pool",
+      "version" : "1.6",
+      "description" : "Commons Object Pooling Library",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "5ca02245c829422176d23fa530e919cc"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "4572d589699f09d866a226a14b7f4323c6d8f040"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "46c42b4a38dc6b2db53a9ee5c92c63db103665d56694e2cfce2c95d51a6860cc"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "3bf5bcdbd7342e794f95747421c510778d8656d7ca901eb9b0fd15b9edb5b470e799c76abce9fe5958355d0d6067565ab71897d02462232176a0145a7d546e69"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "9dd327008604be77bad6fcf249f2806c9b6b6b9858ff35ceff74d6954ea5f66c162c92ba7a24f5da3ad9694b445a644a"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "c3295ce0994916658580fc046aa12e48559f43cde61a95aeb3ffe87d71b8b797ac9a2537825cc338ced5c09e37fe5285"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "5c20f6777fbb2221e461f2855a99d7761635a0eaaf0fd992f9aeb8042a185c95"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "a5294db60c04c0603d982af2c2b46f0052c5ff73f8a4298a01c378050f3476199e5c678b754604a76d68eb537ba4d4f30edddb16a8447b76b5b947922a00f5f2"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/commons-pool/commons-pool@1.6?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "http://commons.apache.org/pool/"
+        },
+        {
+          "type" : "build-system",
+          "url" : "http://vmbuild.apache.org/continuum/"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://repository.apache.org/service/local/staging/deploy/maven2"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "http://issues.apache.org/jira/browse/POOL"
+        },
+        {
+          "type" : "mailing-list",
+          "url" : "http://mail-archives.apache.org/mod_mbox/commons-user/"
+        },
+        {
+          "type" : "vcs",
+          "url" : "http://svn.apache.org/viewvc/commons/proper/pool/trunk"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/com.github.luben/zstd-jni@1.5.7-15?type=jar",
+      "publisher" : "com.github.luben",
+      "group" : "com.github.luben",
+      "name" : "zstd-jni",
+      "version" : "1.5.7-15",
+      "description" : "JNI bindings for Zstd native library that provides fast and high compression lossless algorithm for Java and all JVM languages.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "3191750939ebb3080ff0f8d006bd5641"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "7a3774ad80cf7644eb41b2981010d47b20e31bc4"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "88af05c50951c2c8d0fe10c7b3451736204fcc389eaad01e767e7acc64e75fe2"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "d98e7743c1e7da96ea7d8932fee7d817871c5798ce56c73d57eb5ac2ae13f26fb2e1d2f8cf39e9abf0a95edefe11d7225866d7839c7d8ea9be4fc56c0e70ed1c"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "8c5e235c6e270dfbdc8ee8c939be2b313b6e6fffd724de4521828dbd93c2967cf5c7b897d830a5a04e0ff5596a351603"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "851154a57829638df1b68addd4de154ebd253c3e3d2e32471fe3d57280e308435054c5228a0785052f1635438e1da55e"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "aeb3d8ea05c447515d8098599f01ac6248882bca3ad947360d1d15502c7a4b5e"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "caec87cda02cea301159a219dfbd1ba3d98414aa6c292a9628c4ffd60013d293d7f098026be43a89a19c8c660ae92952690b96200758ac28ce77bf7e32507988"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "BSD-2-Clause"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/com.github.luben/zstd-jni@1.5.7-15?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/luben/zstd-jni"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.apache.parquet/parquet-jackson@1.18.1-deepbi1?type=jar",
+      "publisher" : "The Apache Software Foundation",
+      "group" : "org.apache.parquet",
+      "name" : "parquet-jackson",
+      "version" : "1.18.1-deepbi1",
+      "description" : "Parquet is a columnar storage format that supports nested data. This provides the java implementation.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "c8b06ca0cd0ca41f886fcd202572f264"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "705545de4038b5e37ef6f804bf4831a033256687"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "9fb8b046f4aaee3e942af2344589060bd4db56dae2e175bb8f38bf35784e491d"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "8191f1bf316f80f9fc59163da17db3117f16b0d67f4d60d2edaa65a103eb3339e0e4f133af138d0522c81e91ec8b3e6ba5b315b1b5414fbd0fde5a24d047b767"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "80742c302b6e2e5c26a82d45b8d2d1a7720fcaab31c38a744a327fe155ada0bc2368f78065577641c97e26252e2a3ec5"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "f7ffa6a176c3ff6353abf689a167d3910173d7f3e7de3a65af24efe176ef2fa07319306c5128b06e1f6d6c4b3b2a95c5"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "feaa00849f23dadd8a85213d40e2be433793fae517b2641995c2aed5ad60de0b"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "af43ab7992149fb4b37aee636319e25164e8963359e414603713645572e34fba635c409e8cd1583e71eb9a593afb9cc475b3c09f1191d7215eeeda44258d26ec"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.apache.parquet/parquet-jackson@1.18.1-deepbi1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://parquet.apache.org"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://repository.apache.org/service/local/staging/deploy/maven2"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/apache/parquet-java/issues"
+        },
+        {
+          "type" : "mailing-list",
+          "url" : "dev-subscribe@parquet.apache.org"
+        },
+        {
+          "type" : "vcs",
+          "url" : "scm:git:git@github.com:apache/parquet-java.git/parquet-jackson"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.22.4?type=jar",
+      "publisher" : "FasterXML",
+      "group" : "com.fasterxml.jackson.core",
+      "name" : "jackson-core",
+      "version" : "2.22.4",
+      "description" : "Core Jackson processing abstractions (aka Streaming API), implementation for JSON",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "fa9ba32880026c653cc151bed0c28498"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "d753ae59bae7dcb183f856da541c5b27272088ce"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "2d30c375cddea9657a1e1ef97547a2694b663b355facb4de53a097782b312d1a"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "3b0d500043699ce40fc6befc04c9dbf3e8067de453098fba53d1891793bd3da80955e44536d113fac6fc8fb58264e47b265ab3466b3c6fd4bca111487ac24700"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "8b3beecfc5464c704601fe9cfe90ccabb7090381676da9d7514b27c979c4580baa1a343c9724146fc86c0568cad6d53c"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "30e3394466b713fa98b37e6d98948d38b26e2be090f35902f3416fa93c69c78d7d5e69d035a8403d720bb7106f29e716"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "edc5681da0d239439298ed33621f4aa1991aeca9a29be0c1d6ba76036dd8dfdc"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "9e9e02839c0cbe5c5aafb5af23d25db2bc71754a10c18998aee1fe7d216fdf7dd6602859480d5e76991f9393587ac215633f9a1740329715db40904532aaf483"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.22.4?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/FasterXML/jackson-core"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://central.sonatype.com/api/v1/publisher"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/FasterXML/jackson-core/issues"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/FasterXML/jackson-core"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.22?type=jar",
+      "publisher" : "FasterXML",
+      "group" : "com.fasterxml.jackson.core",
+      "name" : "jackson-annotations",
+      "version" : "2.22",
+      "description" : "Core annotations used for value types, used by Jackson data binding package.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "04c11c456fd1e21b9a21c25c665109cc"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "15c67f9498d6934cff9510fc70c5a12e52290457"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "21ddb598807d3a51a876704eb979d9296e1c6a6f47ab1826ff88c6d6a127a2d0"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "63b597ec02b4e31c57266d9b96f05f301f217bc12ffb7ba046a5658d2829728930a559947b98eb6c3cc448413a96b4939427aa669ae1e2dc3597ab5d5d287f9f"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "35b6fe651afeed54d1e6f7a39ac6cf6fdbafacdf2e3bdff7b29b965ccb79a0c53342a56bf0ecea4d6c4c4651b1d6aa19"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "72267dc54c4175c42ca0dd430a87b12cc68619a8777be2048e1d2f0747db884a568b5c346c77c9c8c0714ab96018f5f7"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "6bfc7b4ba70779fe5f0b1e2af585abab982f7929a68beb2c0e62ea2e2a321de0"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "3f1bdfa32f7df76ac14cd2a3e689b65066fa0a6a760a9b8b1121773bb1b043a44587d4148c67f361dc6c630e6b31f29b2691a57d47caabea5ca23ae44af34a5e"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.22?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/FasterXML/jackson"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://central.sonatype.com/api/v1/publisher"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/FasterXML/jackson-annotations/issues"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/FasterXML/jackson-annotations"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.22.4?type=jar",
+      "publisher" : "FasterXML",
+      "group" : "com.fasterxml.jackson.core",
+      "name" : "jackson-databind",
+      "version" : "2.22.4",
+      "description" : "General data-binding functionality for Jackson: works on core streaming API",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "e782b43929d9cb465924a105bdbf2db8"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "1ff5a55d62432f57e8044394976e598af0c5b3b8"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "d4cbf8947087f305869826801913abdc50735a1fab2074a1993e7bc67ca974a3"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "688ee3a248895070623288bbbd1050e1c14f54d24ddac9be1e624e264eed8d88a6ca07ae90af6056bed1e5f1d0c9ac9db503cbcaaa45db7ba8ca213d3387dde6"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "82b6ee17013047935bf6da141a1084a625200883c04984c6d07b65ea41925b7eeee1674aeffcef37d1e724e6727951a6"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "39acae150a64e2fead35eecc17bd17f3fae8c003ff493899da4e540cd6af292e883b5d71102066efff91b83c256fcc27"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "a7729d3990f1a7ca650383073604455f172d267b0152465880ad5bc0efa6741f"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "8f01016a09ec87f9d182f006026d3c14d7098b3548aa34501db40a3b823c933ac278b7148c96606c8c441a746ea63f0f8ceb6fa7067546649816c678ab4a5962"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.22.4?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/FasterXML/jackson"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://central.sonatype.com/api/v1/publisher"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/FasterXML/jackson-databind/issues"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/FasterXML/jackson-databind"
+        }
+      ]
+    }
+  ],
+  "dependencies" : [
+    {
+      "ref" : "pkg:maven/org.apache.parquet/parquet-hadoop-bundle@1.18.1-deepbi1?type=jar",
+      "dependsOn" : [
+        "pkg:maven/org.apache.parquet/parquet-common@1.18.1?type=jar",
+        "pkg:maven/org.apache.parquet/parquet-column@1.18.1?type=jar",
+        "pkg:maven/org.apache.parquet/parquet-hadoop@1.18.1?type=jar",
+        "pkg:maven/org.apache.parquet/parquet-jackson@1.18.1-deepbi1?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/org.apache.parquet/parquet-common@1.18.1?type=jar",
+      "dependsOn" : [
+        "pkg:maven/org.apache.parquet/parquet-format-structures@1.18.1?type=jar",
+        "pkg:maven/org.slf4j/slf4j-api@1.7.33?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/org.apache.parquet/parquet-format-structures@1.18.1?type=jar",
+      "dependsOn" : [
+        "pkg:maven/javax.annotation/javax.annotation-api@1.3.2?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/javax.annotation/javax.annotation-api@1.3.2?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/org.slf4j/slf4j-api@1.7.33?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/org.apache.parquet/parquet-column@1.18.1?type=jar",
+      "dependsOn" : [
+        "pkg:maven/org.apache.parquet/parquet-common@1.18.1?type=jar",
+        "pkg:maven/org.apache.parquet/parquet-encoding@1.18.1?type=jar",
+        "pkg:maven/org.slf4j/slf4j-api@1.7.33?type=jar",
+        "pkg:maven/org.locationtech.jts/jts-core@1.20.0?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/org.apache.parquet/parquet-encoding@1.18.1?type=jar",
+      "dependsOn" : [
+        "pkg:maven/org.apache.parquet/parquet-common@1.18.1?type=jar",
+        "pkg:maven/org.slf4j/slf4j-api@1.7.33?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/org.locationtech.jts/jts-core@1.20.0?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/org.apache.parquet/parquet-hadoop@1.18.1?type=jar",
+      "dependsOn" : [
+        "pkg:maven/org.apache.parquet/parquet-column@1.18.1?type=jar",
+        "pkg:maven/org.apache.parquet/parquet-format-structures@1.18.1?type=jar",
+        "pkg:maven/org.apache.parquet/parquet-common@1.18.1?type=jar",
+        "pkg:maven/org.apache.parquet/parquet-jackson@1.18.1-deepbi1?type=jar",
+        "pkg:maven/org.xerial.snappy/snappy-java@1.1.10.8?type=jar",
+        "pkg:maven/io.airlift/aircompressor@2.0.3?type=jar",
+        "pkg:maven/commons-pool/commons-pool@1.6?type=jar",
+        "pkg:maven/com.github.luben/zstd-jni@1.5.7-15?type=jar",
+        "pkg:maven/org.slf4j/slf4j-api@1.7.33?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/org.apache.parquet/parquet-jackson@1.18.1-deepbi1?type=jar",
+      "dependsOn" : [
+        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.22.4?type=jar",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.22?type=jar",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.22.4?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.22.4?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.22?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.22.4?type=jar",
+      "dependsOn" : [
+        "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.22?type=jar",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.22.4?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/org.xerial.snappy/snappy-java@1.1.10.8?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/io.airlift/aircompressor@2.0.3?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/commons-pool/commons-pool@1.6?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/com.github.luben/zstd-jni@1.5.7-15?type=jar",
+      "dependsOn" : [ ]
+    }
+  ]
+}
