@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.apache.hadoop</groupId>
+  <artifactId>hadoop-client-runtime</artifactId>
+  <versioning>
+    <release>3.4.3-deepbi1</release>
+    <versions>
+      <version>3.4.3-deepbi1</version>
+    </versions>
+    <lastUpdated>20261104014559</lastUpdated>
+  </versioning>
+</metadata>
