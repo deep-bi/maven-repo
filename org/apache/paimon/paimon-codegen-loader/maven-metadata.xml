@@ -3,12 +3,13 @@
   <groupId>org.apache.paimon</groupId>
   <artifactId>paimon-codegen-loader</artifactId>
   <versioning>
-    <release>1.4.2-deepbi3</release>
+    <release>1.4.2-fips-deepbi1</release>
     <versions>
       <version>1.4.2-deepbi1</version>
       <version>1.4.2-deepbi2</version>
       <version>1.4.2-deepbi3</version>
+      <version>1.4.2-fips-deepbi1</version>
     </versions>
-    <lastUpdated>20261029122918</lastUpdated>
+    <lastUpdated>20261118144354</lastUpdated>
   </versioning>
 </metadata>
